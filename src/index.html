@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./css/styles.scss" />
+  </head>
+  <body>
+    <header class="catalog-header">
+      <p class="catalog-header__subtitle">Enjoy your studying!</p>
+      <p class="catalog-header__title">Our online courses</p>
+    </header>
+
+    <section class="catalog-filters">
+      <div class="catalog-filters__buttons">
+        <button
+          class="catalog-filters__button catalog-filters__button--active"
+          data-filter="all"
+        >
+          All <span class="catalog-filters__button-count"></span>
+        </button>
+
+        <button class="catalog-filters__button" data-filter="marketing">
+          Marketing <span class="catalog-filters__button-count"></span>
+        </button>
+
+        <button class="catalog-filters__button" data-filter="management">
+          Management <span class="catalog-filters__button-count"></span>
+        </button>
+
+        <button class="catalog-filters__button" data-filter="hr & recruting">
+          HR & Recruiting <span class="catalog-filters__button-count"></span>
+        </button>
+
+        <button class="catalog-filters__button" data-filter="design">
+          Design <span class="catalog-filters__button-count"></span>
+        </button>
+
+        <button class="catalog-filters__button" data-filter="development">
+          Development <span class="catalog-filters__button-count"></span>
+        </button>
+      </div>
+
+      <form class="catalog-filters__search catalog-search">
+        <div class="catalog-search__field">
+          <input
+            type="text"
+            id="catalog-search-input"
+            class="catalog-search__input"
+            placeholder="Search course..."
+            name="query"
+          />
+          <button type="submit" class="catalog-search__button">
+            <img
+              class="catalog-search__icon"
+              src="assets/image/search.png"
+              alt="Search"
+            />
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <main class="catalog">
+      <div class="catalog__cards" id="cards-container"></div>
+
+      <div class="catalog__load-more">
+        <button class="catalog__load-more-btn" id="load-more-btn">
+          <img
+            class="catalog__load-more-btn__icon"
+            src="./assets/image/loader.png"
+            alt="Loader"
+          />
+          <span class="catalog__load-more-btn__text">Load more</span>
+        </button>
+      </div>
+    </main>
+
+    <img
+      src="assets/image/background/shape_1.png"
+      class="catalog-background__shape catalog-background__shape--1"
+      alt=""
+    />
+    <img
+      src="assets/image/background/shape_2.png"
+      class="catalog-background__shape catalog-background__shape--2"
+      alt=""
+    />
+    <img
+      src="assets/image/background/shape_3.png"
+      class="catalog-background__shape catalog-background__shape--3"
+      alt=""
+    />
+  </body>
+</html>
